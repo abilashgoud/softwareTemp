@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  font-family: "Rubik", sans-serif;
+  animation-name: bgmove;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  /* background: -webkit-linear-gradient(to right, #d9bbab, #847268);
+  background: linear-gradient(to right, #74a4bc, #b6d6cc, #f1fec6); */
+}
+@keyframes bgmove {
+  0% {
+    background-color: #74a4bc;
+  }
+  25% {
+    background-color: #b6d6cc;
+  }
+  50% {
+    background-color: #f1fec6;
+  }
+  75% {
+    background-color: #b6d6cc;
+  }
+  100% {
+    background-color: #74a4bc;
+  }
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.281);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
